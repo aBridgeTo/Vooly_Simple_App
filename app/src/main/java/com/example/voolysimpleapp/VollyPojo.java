@@ -53,7 +53,7 @@ public class VollyPojo extends AppCompatActivity {
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         //making the progressbar visible
-        progressBar.setVisibility(View.VISIBLE);git
+        progressBar.setVisibility(View.VISIBLE);
 
         //creating a string request to send request to the url
         StringRequest stringRequest = new StringRequest(Request.Method.GET, JSON_URL,
