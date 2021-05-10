@@ -97,5 +97,6 @@ public class myDBAdapter {
                 Message.message(context,""+e);
             }
         }
+
     }
 }
