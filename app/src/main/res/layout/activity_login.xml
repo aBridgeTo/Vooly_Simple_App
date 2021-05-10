@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".LoginActivity">
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/nameLayout"
+        android:hint="Enter your Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/passwordLayout"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+  <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+      android:id="@+id/passwordLayout"
+      android:layout_below="@id/nameLayout"
+        android:hint="Enter your Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:layout_below="@id/passwordLayout"
+        android:id="@+id/login"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+
+
+
+
+
+</RelativeLayout>
